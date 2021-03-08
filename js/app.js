@@ -31,7 +31,7 @@ function Activities (activityname,budget,locationAct,catogery )
   this.location = locationAct;
   this.catogery = catogery;
 
-  this.timeNeeded = 4;
+  this.timeNeeded = 4 ;
   Activities.all.push( this );
 
   this.map = '';
