@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 100px minmax(calc(100vh - 170px) , 1fr) 50px;
+    gap: 10px;
+    grid-column: 1fr;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    height: max-content;
+    display: grid;
+    
+}
+
+section header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    grid-row: 1 /2;
+    grid-column: 1 / -1;
+}
+
+section header img {
+    float: left;
+    padding: 30px 30px;
+}
+section header section ul {
+    float: right ;
+    margin-right: 10%;
+}
+
+section header section ul li {
+    display: inline;
+    padding: 30px 3px;  
+    text-transform: uppercase;
+}
+
+section header section ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+main {
+    line-height: 1.5;
+    /* text-align: center; */
+}
+
+
+h2 {
+    text-align: center;
+    /* width: 300px; */
+    text-transform: initial;
+    /* width: 40px; */
+}
+
+#about {
+    text-align: center;
+
+}
+
+#groupvision {
+    /* width: 50%; */
+    text-align: center;
+    align-items: center;
+}
+
+
+main section div {
+    float: left;
+    width: 33.33%;
+    display: block;
+
+}
+
+main section div img {
+    margin: 30px auto;
+    display: block;
+}
+
+main section div h4 {
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+}
+
+main section div p {
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+}
+
