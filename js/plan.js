@@ -35,19 +35,37 @@ function pickResturent ()
 
 function pickActivities(){
   let length;
+  let lastCat;
   for ( let i = 0 ; i < Activities.all.length ; i++ ){
     if ( plan.planDays[0].planActivities.length < 3
       && plan.budget === Activities.all[i].activityBudget
       && plan.planDays[0].dayLocation === Activities.all[i].location ) {
-      plan.planDays[0].planActivities.push( Activities.all[i] );
       // plan.planDays.length < 3 ---> used to make sure to only add 3 activities
 
-      length = plan.planDays[0].planActivities.length;
+      
+      //mohammad
+      for (let j =0 ; j < plan.catogeries.length ;j++){
 
-      for ( let k = length-1 ; k < length ; k++ ){
-        activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
-        console.log(length, activitiesTimeNeeded);
+
+        if ((Activities.all[i].catogery === plan.catogeries[j]) && (Activities.all[i].catogery !== lastCat)){
+          plan.planDays[0].planActivities.push( Activities.all[i] );
+          lastCat= Activities.all[i].catogery;
+          console.log(lastCat);
+          console.log((Activities.all[i].catogery !== lastCat));
+
+          length = plan.planDays[0].planActivities.length;
+
+          for ( let k = length-1 ; k < length ; k++ ){
+            activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
+            console.log(length, activitiesTimeNeeded);
+          }
+    
+
+        }
+
+
       }
+
 
     }
 
@@ -58,11 +76,9 @@ function pickActivities(){
 
 
 
-//let actualTime = 12; // 24h - (7+2+3); 
-//----------> the one we will use 
 
-// test (till catogery function done)
-let actualTime = 15;
+let actualTime = 15;  // 24h - (7+2); 
+
 
 
 let timeLeft = 0;
