@@ -1,3 +1,8 @@
+/////////////////!!! Not Used !!//////////////// 
+/////////////////!!! we are now using plan.js !!//////////////// 
+
+
+
 //plan obj used in the code is the same from form.js
 // pick a hotel // fill planHotel in planDay obj
 'use strict';
