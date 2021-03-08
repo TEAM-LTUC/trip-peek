@@ -35,13 +35,12 @@ function addSelectedDataToPlan( event ) {
     }
   }
 
-  // TODO: get checkboxes by ID
-  // make arr of checkbox value : T/F
+  let areasList = ['south','north','middle'] ;
 
-  // make new arr and push the 3 selected checkboxes to it : nature, historical, urban, handCraft
-  // for loop
-  // call getFormData and add form values to 'plan' object .
-  plan.getFormData ( time,budget ,checkboxValues );
+  let indexGover = randomNumber(0,(areasList.length-1));
+  let nameOfGovern = areasList[indexGover];
+
+  plan.getFormData ( time,budget ,checkboxValues,nameOfGovern );
 
   // write a code to move you to `plan.html` page
 }

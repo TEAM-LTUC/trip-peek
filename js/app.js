@@ -76,13 +76,15 @@ Hotel.all = [] ;
 
 
 // fill plan object properties
-Plan.prototype.getFormData = function ( numOfDays,budget,catogeries )
+Plan.prototype.getFormData = function ( numOfDays,budget,catogeries,governorateName )
 {
   this.numOfDays = numOfDays;
   this.budget = budget;
   this.catogeries = catogeries;
-  // add one day to planA
-  const planDay1 = new PlanDay ( 'south' );
+  console.log( this );
+
+  
+  const planDay1 = new PlanDay (governorateName);
   this.planDays.push( planDay1 );
 };
 
