@@ -45,7 +45,7 @@ function pickActivities(){
 
   do{
 
-    let i = randomNumber(0,(Resturent.all.length-1));
+    let i = randomNumber(0,(Activities.all.length));
 
     if ( plan.planDays[0].planActivities.length < 3 && plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
 
