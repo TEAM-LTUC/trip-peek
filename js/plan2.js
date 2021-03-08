@@ -1,5 +1,5 @@
-/////////////////!!! Not Used !!//////////////// 
-/////////////////!!! we are now using plan.js !!//////////////// 
+/////////////////!!! Not Used !!////////////////
+/////////////////!!! we are now using plan.js !!////////////////
 
 
 
@@ -39,10 +39,19 @@ function pickResturent ()
       plan.planDays[0].planResturent.push( Resturent.all[i] );
 
 
+      if (counterSet === 2){
+        break;
+
+      }
+      counterSet+=1;
+
+
+
+
+
     }
-
-
   }
+
 }
 
 const plan = JSON.parse( localStorage.getItem( 'planA' ) );

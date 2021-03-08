@@ -2,7 +2,7 @@
 // pick a hotel // fill planHotel in planDay obj
 'use strict';
 
-
+let counterSet =0;
 function pickHotel() {
 
 
@@ -35,13 +35,36 @@ function pickResturent ()
 function pickActivities(){
 
   for ( let i = 0 ; i < Activities.all.length ; i++ ){
-    if ( plan.planDays[0].planActivities.length < 3 && plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
-      plan.planDays[0].planActivities.push( Activities.all[i] );
 
-// plan.planDays.length < 3 ---> used to make sure to only add 3 activities 
+
+    let lastCat = '';
+
+    if ( plan.planDays[0].planActivities.length < 3 && plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
+
+      for (let j =0 ; j < plan.catogeries.length ;j++){
+
+
+        if ((Activities.all[i].catogery === plan.catogeries[j]) && (Activities.all[i].catogery !== lastCat)){
+          plan.planDays[0].planActivities.push( Activities.all[i] );
+          lastCat= Activities.all[i].catogery;
+          console.log(lastCat);
+          console.log((Activities.all[i].catogery !== lastCat));
+
+
+
+        }
+
+
+      }
 
     }
 
+
+
+    // plan.planDays.length < 3 ---> used to make sure to only add 3 activities
+
   }
   console.log( plan );
+
 }
+
