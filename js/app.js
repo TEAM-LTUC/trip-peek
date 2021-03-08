@@ -24,21 +24,18 @@ function PlanDay ( dayLocation ) {
 }
 
 
-function Activities (activityname,budget,locationAct)
+function Activities (activityname,budget,locationAct,catogery,timeNeeded)
 {
   this.name = activityname ;
   this.activityBudget = budget;
   this.location = locationAct;
-  this.catogery = '';
+  this.catogery = catogery;
 
-
-
-
-  this.timeNeeded = 4;
-  this.map = '';
-  this.imagePath = '';
+  this.timeNeeded = timeNeeded ;
   Activities.all.push( this );
 
+  this.map = '';
+  this.imagePath = '' ;
 }
 Activities.all = [];
 
@@ -51,8 +48,6 @@ function Resturent ( name,resturentBudget,location )
   this.location = location;
 
   Resturent.all.push( this );
-
-  this.timeNeeded = 1;
 
   this.map = '';
   this.imagePath = '';
@@ -70,8 +65,6 @@ function Hotel ( name,hotelBudget,location )
 
   Hotel.all.push( this );
 
-  this.timeNeeded = 7;
-
   this.map = '';
   this.imagePath = '';
 }
@@ -85,8 +78,6 @@ Plan.prototype.getFormData = function ( numOfDays,budget,catogeries )
   this.numOfDays = numOfDays;
   this.budget = budget;
   this.catogeries = catogeries;
-  console.log( this );
-
   // add one day to planA
   const planDay1 = new PlanDay ( 'south' );
   this.planDays.push( planDay1 );
@@ -104,17 +95,17 @@ Plan.prototype.saveToLocalStorage = function() {
 
 function generateHotel ()
 {
-  new Hotel ( 'Hotel','L','south' );
-  new Hotel ( 'Hotel','L','north' );
-  new Hotel ( 'Hotel','L','middle' );
+  new Hotel ( 'Hotel1','L','south' );
+  new Hotel ( 'Hotel2','L','north' );
+  new Hotel ( 'Hotel3','L','middle' );
 
-  new Hotel ( 'Hotel','M','south' );
-  new Hotel ( 'Hotel','M','north' );
-  new Hotel ( 'Hotel','M','middle' );
+  new Hotel ( 'Hotel4','M','south' );
+  new Hotel ( 'Hotel5','M','north' );
+  new Hotel ( 'Hotel6','M','middle' );
 
-  new Hotel ( 'Hotel','G','south' );
-  new Hotel ( 'Hotel','G','north' );
-  new Hotel ( 'Hotel','G','middle' );
+  new Hotel ( 'Hotel7','G','south' );
+  new Hotel ( 'Hotel8','G','north' );
+  new Hotel ( 'Hotel9','G','middle' );
 
   console.log( Hotel.all );
 }
@@ -129,37 +120,24 @@ function generatResturent ()
 {
   new Resturent ( 'Resturent1','L','south' );
   new Resturent ( 'Resturent2','L','south' );
-
-  new Resturent ( 'Resturent1','L','north' );
-  new Resturent ( 'Resturent2','L','north' );
-
-  new Resturent ( 'Resturent1','L','middle' );
-  new Resturent ( 'Resturent2','L','middle' );
-
-
+  new Resturent ( 'Resturent3','L','north' );
+  new Resturent ( 'Resturent4','L','north' );
+  new Resturent ( 'Resturent5','L','middle' );
+  new Resturent ( 'Resturent6','L','middle' );
   //----------------------------------------------
-
-  new Resturent ( 'Resturent1','M','south' );
-  new Resturent ( 'Resturent2','M','south' );
-
-  new Resturent ( 'Resturent1','M','north' );
-  new Resturent ( 'Resturent2','M','north' );
-
-  new Resturent ( 'Resturent1','M','middle' );
-  new Resturent ( 'Resturent2','M','middle' );
-
-
+  new Resturent ( 'Resturent7','M','south' );
+  new Resturent ( 'Resturent8','M','south' );
+  new Resturent ( 'Resturent9','M','north' );
+  new Resturent ( 'Resturent10','M','north' );
+  new Resturent ( 'Resturent11','M','middle' );
+  new Resturent ( 'Resturent12','M','middle' );
   //------------------------------------------------
-
-
-  new Resturent ( 'Resturent1','G','south' );
-  new Resturent ( 'Resturent2','G','south' );
-
-  new Resturent ( 'Resturent1','G','north' );
-  new Resturent ( 'Resturent2','G','north' );
-
-  new Resturent ( 'Resturent1','G','middle' );
-  new Resturent ( 'Resturent2','G','middle' );
+  new Resturent ( 'Resturent13','G','south' );
+  new Resturent ( 'Resturent14','G','south' );
+  new Resturent ( 'Resturent15','G','north' );
+  new Resturent ( 'Resturent16','G','north' );
+  new Resturent ( 'Resturent17','G','middle' );
+  new Resturent ( 'Resturent18','G','middle' );
 
   console.log( Resturent.all );
 }
@@ -171,111 +149,67 @@ generatResturent ();
 
 function generateActivities ()
 {
-  new Activities ( 'Activities1','L','south');
-  new Activities ( 'Activities2','L','south');
-  new Activities ( 'Activities3','L','south');
 
 
-  new Activities ( 'Activities1','L','north' );
-  new Activities ( 'Activities2','L','north' );
-  new Activities ( 'Activities3','L','north' );
-
-
-  new Activities ( 'Activities1','L','middle' );
-  new Activities ( 'Activities2','L','middle' );
-  new Activities ( 'Activities3','L','middle' );
-
-  //----------------------------------------------
-
-  new Activities ( 'Activities1','M','south' );
-  new Activities ( 'Activities2','M','south' );
-  new Activities ( 'Activities3','M','south' );
-
-
-  new Activities ( 'Activities1','M','north' );
-  new Activities ( 'Activities2','M','north' );
-  new Activities ( 'Activities3','M','north' );
-
-
-  new Activities ( 'Activities1','M','middle' );
-  new Activities ( 'Activities2','M','middle' );
-  new Activities ( 'Activities3','M','middle' );
-
-  //------------------------------------------------
-
-
-  new Activities ( 'Activities1','G','south' );
-  new Activities ( 'Activities2','G','south' );
-  new Activities ( 'Activities3','G','south' );
-
-
-  new Activities ( 'Activities1','G','north' );
-  new Activities ( 'Activities2','G','north' );
-  new Activities ( 'Activities3','G','north' );
-
-  new Activities ( 'Activities1','G','middle' );
-  new Activities ( 'Activities2','G','middle' );
-  new Activities ( 'Activities3','G','middle' );
-
-
+  //--------------------------------------------------------------
+  // ----------------------------Low / south
+  new Activities ( 'Activities1','L','south', 'nature','5');
+  new Activities ( 'Activities2','L','south' , 'nature','5');
+  new Activities ( 'Activities3','L','south', 'urban','4');
+  new Activities ( 'Activities4','L','south', 'urban','4');
+  new Activities ( 'Activities5','L','south', 'handCraft','2');
+  new Activities ( 'Activities6','L','south', 'handCraft','2');
+  new Activities ( 'Activities7','L','south', 'historical','3');
+  new Activities ( 'Activities8','L','south', 'historical','3');
+  //-----------------------Low / middle
+  new Activities ( 'Activities9','L','middle', 'nature','5');
+  new Activities ( 'Activities10','L','middle' , 'nature','5');
+  new Activities ( 'Activities11','L','middle', 'urban','4');
+  new Activities ( 'Activities12','L','middle', 'urban','4');
+  new Activities ( 'Activities13','L','middle', 'handCraft','2');
+  new Activities ( 'Activities14','L','middle', 'handCraft','2');
+  new Activities ( 'Activities15','L','middle', 'historical','3');
+  new Activities ( 'Activities16','L','middle', 'historical','3');
+  //--------------------------------------------------------------
+  //------------------------------------------ Medium / south
+  new Activities ( 'Activities17','M','south', 'nature','5');
+  new Activities ( 'Activities18','M','south' , 'nature','5');
+  new Activities ( 'Activities19','M','south', 'urban','4');
+  new Activities ( 'Activities20','M','south', 'urban','4');
+  new Activities ( 'Activities21','M','south', 'handCraft','2');
+  new Activities ( 'Activities22','M','south', 'handCraft','2');
+  new Activities ( 'Activities23','M','south', 'historical','3');
+  new Activities ( 'Activities24','M','south', 'historical','3');
+  //---------------------------// Medium / middle
+  new Activities ( 'Activities25','M','middle', 'nature','5');
+  new Activities ( 'Activities26','M','middle' , 'nature','5');
+  new Activities ( 'Activities27','M','middle', 'urban','4');
+  new Activities ( 'Activities28','M','middle', 'urban','4');
+  new Activities ( 'Activities29','M','middle', 'handCraft','2');
+  new Activities ( 'Activities30','M','middle', 'handCraft','2');
+  new Activities ( 'Activities31','M','middle', 'historical','3');
+  new Activities ( 'Activities32','M','middle', 'historical','3');
+  //---------------------------------------------------------
+  //------------------------------------------ Good / south
+  new Activities ( 'Activities33','G','south', 'nature','5');
+  new Activities ( 'Activities34','G','south' , 'nature','5');
+  new Activities ( 'Activities35','G','south', 'urban','4');
+  new Activities ( 'Activities36','G','south', 'urban','4');
+  new Activities ( 'Activities37','G','south', 'handCraft','2');
+  new Activities ( 'Activities38','G','south', 'handCraft','2');
+  new Activities ( 'Activities39','G','south', 'historical','3');
+  new Activities ( 'Activities40','G','south', 'historical','3');
+  //---------------------------// Medium / middle
+  new Activities ( 'Activities41','G','middle', 'nature','5');
+  new Activities ( 'Activities42','G','middle' , 'nature','5');
+  new Activities ( 'Activities43','G','middle', 'urban','4');
+  new Activities ( 'Activities44','G','middle', 'urban','4');
+  new Activities ( 'Activities45','G','middle', 'handCraft','2');
+  new Activities ( 'Activities46','G','middle', 'handCraft','2');
+  new Activities ( 'Activities47','G','middle', 'historical','3');
+  new Activities ( 'Activities48','G','middle', 'historical','3');
   console.log( Activities.all );
 }
 
 
 generateActivities ();
-
-
-
-
-
-// generate  objects  (18 obj to account all cases) , time needed = 1
-
-// function generateActivity ()
-// {
-// new Resturent ('Activity1','L','south');
-// new Resturent ('Activity2','L','south');
-// new Resturent ('Activity3','L','south');
-
-// new Resturent ('Activity1','L','north');
-// new Resturent ('Activity2','L','north');
-// new Resturent ('Activity3','L','north');
-
-
-// new Resturent ('Activity1','L','middle');
-// new Resturent ('Activity2','L','middle');
-// new Resturent ('Activity3','L','middle');
-
-
-// //----------------------------------------------------
-// new Resturent ('Activity1','M','south');
-// new Resturent ('Activity2','M','south');
-// new Resturent ('Activity3','M','south');
-
-// new Resturent ('Activity1','M','north');
-// new Resturent ('Activity2','M','north');
-// new Resturent ('Activity3','M','north');
-
-
-// new Resturent ('Activity1','M','middle');
-// new Resturent ('Activity2','M','middle');
-// new Resturent ('Activity3','M','middle');
-
-
-// //------------------------------------------------
-
-// new Resturent ('Activity1','G','south');
-// new Resturent ('Activity2','G','south');
-// new Resturent ('Activity3','G','south');
-
-// new Resturent ('Activity1','G','north');
-// new Resturent ('Activity2','G','north');
-// new Resturent ('Activity3','G','north');
-
-
-// new Resturent ('Activity1','G','middle');
-// new Resturent ('Activity2','G','middle');
-// new Resturent ('Activity3','G','middle');
-
-
-// console.log(Resturent.all);
-// }

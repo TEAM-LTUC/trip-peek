@@ -2,6 +2,8 @@
 // pick a hotel // fill planHotel in planDay obj
 'use strict';
 
+let activitiesTimeNeeded = []; // arr of activity's timeNeeded
+
 
 function pickHotel() {
 
@@ -28,18 +30,69 @@ function pickResturent ()
 
 
   }
-  
+
 }
 
 function pickActivities(){
-
+  let length;
+  let lastCat;
   for ( let i = 0 ; i < Activities.all.length ; i++ ){
-    if ( plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
-      plan.planDays[0].planActivities.push( Activities.all[i] );
+    if ( plan.planDays[0].planActivities.length < 3
+      && plan.budget === Activities.all[i].activityBudget
+      && plan.planDays[0].dayLocation === Activities.all[i].location ) {
+      // plan.planDays.length < 3 ---> used to make sure to only add 3 activities
+
+
+      //mohammad
+      for (let j =0 ; j < plan.catogeries.length ;j++){
+
+
+        if ((Activities.all[i].catogery === plan.catogeries[j]) && (Activities.all[i].catogery !== lastCat)){
+          plan.planDays[0].planActivities.push( Activities.all[i] );
+          lastCat= Activities.all[i].catogery;
+          console.log(lastCat);
+          console.log((Activities.all[i].catogery !== lastCat));
+
+          length = plan.planDays[0].planActivities.length;
+
+          for ( let k = length-1 ; k < length ; k++ ){
+            activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
+            console.log(length, activitiesTimeNeeded);
+          }
+
+
+        }
+
+
+      }
 
 
     }
 
+
+    console.log( plan );
   }
-  console.log( plan );
+}
+
+
+
+
+
+let actualTime = 15; // 24h - (7+2);
+
+
+let timeLeft = 0;
+let activitiesTotalTime = 0;
+
+function timeLeftFunc ()
+{
+  for ( let i = 0 ; i < activitiesTimeNeeded.length ; i++ ){
+
+    activitiesTotalTime = activitiesTotalTime + Number(activitiesTimeNeeded[i]);
+
+    console.log(activitiesTotalTime);
+
+  }
+  timeLeft = actualTime - activitiesTotalTime;
+
 }
