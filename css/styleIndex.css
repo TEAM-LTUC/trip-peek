@@ -1,17 +1,22 @@
 *{
   box-sizing: border-box;}
+
 body{
   width: 100%;
   margin: auto;
   height: max-content;
   display: grid;
+
 }
+
 .container {
   display: grid;
   grid-template-rows: 100px minmax(calc(100vh - 170px) , 1fr) 50px;
   gap: 10px;
   grid-column: 1fr;
 }
+
+
 header {
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -22,21 +27,34 @@ header {
 header img {
   float: left;
   padding: 30px 70px;
+
 }
+
 header section ul {
   margin: 0 0 0 70% ;
 }
+
 header section ul li {
   display: inline;
-  padding: 30px 20px;  
+  padding: 30px 3px;  
   text-transform: uppercase;
+  
 }
+header section ul li a{
+  color:black;
+  text-decoration: none;
+
+}
+
 main {
   grid-row: 1 /3;
   grid-column: 1 / -1;
   /* height: max; */
+
+
 }
-main .hero-image {
+
+/* main .hero-image {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
 height: 60%;
 background-position: center;
@@ -44,6 +62,8 @@ background-repeat: no-repeat;
 background-size: cover;
 position: relative;
 }
+
+
 main .hero-text {
   text-align: center;
   position: absolute;
@@ -56,43 +76,186 @@ main .hero-text {
 }
 .hero-text p {
   transform: translate(10%);
+    
+    
+} */
+
+main h1 {
+  padding-bottom: 50px;
+  margin-left: 70px;
+  text-transform: capitalize;
+  text-align: center;
+  float: left;
+  margin-top: -720px;
+  width: 700px;
+  font-size: 60px;
 }
-main h2 {
+.p2{
+  padding-bottom: 50px;
+  margin-left: 70px;
+  text-transform: capitalize;
+  text-align: center;
+  float: left;
+  margin-top: -520px;
+  font-size: 30px;
+  width: 700px;
+}
+
+.hpeek {
   width: 100%;
   text-align: center;
   text-transform: capitalize;
+  font-size: xx-large;
 }
-main div div a button {
+.p1 {
+  text-align: center;
+}
+  
+main a button {
   height: 50px;
   width: 200px;
   margin: 22px 0;
   background-color: rgb(0, 0, 0);
   text-transform: capitalize;
   color: white;
+  font-size: 20px;
+  margin-left: 330px;
+  
 }
-main section .second {
-  overflow: auto;
-  float: left;
-  padding: 10px;
-  margin: 5.5px;
-}
+/* .butt {
+  margin-top: -500px;
+} */
+
 footer  ul li {
   display: inline;
   list-style: none;
+  float: left;
+      padding: 5px;
   }
   footer{
       height: 130px;
       text-align: center;
-      display: block;
-      margin-top: 1050px;
+      padding-top: 15px;
+      
   }
-  footer ul li {
-      float: left;
-      padding: 1px;
+  footer  ul li img{
+      padding: auto;
   }
+
   footer b{
       float: right;
+      margin-right: 50px;
+      padding: auto;
+      /* padding-right: 30px; */
   }
-  main section video {
+  footer img {
+      padding-left: 10px;
+  }
+  video {
       padding: 30px 50px;
+      
+      
+
   }
+
+  .mySlides {display: none;
+  width: 100%;}
+  .mySlides img {
+      width: 100%;
+       z-index: -1;
+       opacity: 0.5;
+       
+      }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-left: 20px;
+    z-index: -1;
+  
+  }
+  /* Fading animation */
+  .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+  
+    .second {
+      padding: 50px;
+      display: flex;
+    }
+
+    main section div {
+        float: left;
+        padding: 20px;
+        margin: 5.5px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+/* .review {
+  padding: 45px 45px;
+  width: 100%;
+  position: relative;
+    margin-left: 20px;
+    z-index: -1;
+}   
+.colomn1{
+  float:left;
+  width: 45%;
+  /* padding-right: 59px; */
+/* }   
+.colomn2{
+  float:right;
+  width: 45%;
+  /* padding-right: 59px; */
+/* }  
+    */
+
+.Slider{    
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  }
+.Slider ul {    
+  list-style: none;
+  padding: 0px;
+  position: relative;
+  animation: sliding 20s ease-in-out infinite;
+  }
+
+img{    
+  padding: 10px;          
+ }
+
+.Slider ul li {    
+  float: left;
+  display: inline;
+}
+
+@keyframes sliding {    
+  0%  {left: 0;}    
+  50% {left: -714px;}    
+  75% {left:-1428px;}   
+     
+}
