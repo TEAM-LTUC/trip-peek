@@ -35,7 +35,7 @@ function Activities (activityname,budget,locationAct,catogery,timeNeeded)
   Activities.all.push( this );
 
   this.map = '';
-  this.imagePath = 'https://image.freepik.com/free-vector/happy-young-people-enjoying-camping-guy-playing-guitar-students-teenagers-illustration-outdoor-activities-adventure-travel-concept-banner-website-landing-web-page_179970-2118.jpg';
+  this.imagePath = '' ;
 }
 Activities.all = [];
 
@@ -49,7 +49,6 @@ function Resturent ( name,resturentBudget,location )
 
   Resturent.all.push( this );
 
-  //this.timeNeeded = 1;
   this.map = '';
   this.imagePath = '';
 }
@@ -66,8 +65,6 @@ function Hotel ( name,hotelBudget,location )
 
   Hotel.all.push( this );
 
-  // this.timeNeeded = 7;
-
   this.map = '';
   this.imagePath = '';
 }
@@ -81,8 +78,6 @@ Plan.prototype.getFormData = function ( numOfDays,budget,catogeries )
   this.numOfDays = numOfDays;
   this.budget = budget;
   this.catogeries = catogeries;
-  console.log( this );
-
   // add one day to planA
   const planDay1 = new PlanDay ( 'south' );
   this.planDays.push( planDay1 );
@@ -155,8 +150,8 @@ generatResturent ();
 function generateActivities ()
 {
 
-  
-//--------------------------------------------------------------
+
+  //--------------------------------------------------------------
   // ----------------------------Low / south
   new Activities ( 'Activities1','L','south', 'nature','5');
   new Activities ( 'Activities2','L','south' , 'nature','5');
@@ -173,7 +168,7 @@ function generateActivities ()
   new Activities ( 'Activities12','L','middle', 'urban','4');
   new Activities ( 'Activities13','L','middle', 'handCraft','2');
   new Activities ( 'Activities14','L','middle', 'handCraft','2');
- new Activities ( 'Activities15','L','middle', 'historical','3');
+  new Activities ( 'Activities15','L','middle', 'historical','3');
   new Activities ( 'Activities16','L','middle', 'historical','3');
   //--------------------------------------------------------------
   //------------------------------------------ Medium / south
@@ -218,59 +213,3 @@ function generateActivities ()
 
 
 generateActivities ();
-
-
-
-
-
-// generate  objects  (18 obj to account all cases) , time needed = 1
-
-// function generateActivity ()
-// {
-// new Resturent ('Activity1','L','south');
-// new Resturent ('Activity2','L','south');
-// new Resturent ('Activity3','L','south');
-
-// new Resturent ('Activity1','L','north');
-// new Resturent ('Activity2','L','north');
-// new Resturent ('Activity3','L','north');
-
-
-// new Resturent ('Activity1','L','middle');
-// new Resturent ('Activity2','L','middle');
-// new Resturent ('Activity3','L','middle');
-
-
-// //----------------------------------------------------
-// new Resturent ('Activity1','M','south');
-// new Resturent ('Activity2','M','south');
-// new Resturent ('Activity3','M','south');
-
-// new Resturent ('Activity1','M','north');
-// new Resturent ('Activity2','M','north');
-// new Resturent ('Activity3','M','north');
-
-
-// new Resturent ('Activity1','M','middle');
-// new Resturent ('Activity2','M','middle');
-// new Resturent ('Activity3','M','middle');
-
-
-// //------------------------------------------------
-
-// new Resturent ('Activity1','G','south');
-// new Resturent ('Activity2','G','south');
-// new Resturent ('Activity3','G','south');
-
-// new Resturent ('Activity1','G','north');
-// new Resturent ('Activity2','G','north');
-// new Resturent ('Activity3','G','north');
-
-
-// new Resturent ('Activity1','G','middle');
-// new Resturent ('Activity2','G','middle');
-// new Resturent ('Activity3','G','middle');
-
-
-// console.log(Resturent.all);
-// }

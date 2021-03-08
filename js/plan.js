@@ -42,7 +42,7 @@ function pickActivities(){
       && plan.planDays[0].dayLocation === Activities.all[i].location ) {
       // plan.planDays.length < 3 ---> used to make sure to only add 3 activities
 
-      
+
       //mohammad
       for (let j =0 ; j < plan.catogeries.length ;j++){
 
@@ -59,7 +59,7 @@ function pickActivities(){
             activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
             console.log(length, activitiesTimeNeeded);
           }
-    
+
 
         }
 
@@ -77,8 +77,8 @@ function pickActivities(){
 
 
 
-let actualTime = 15;  // 24h - (7+2); 
 
+let actualTime = 15; // 24h - (7+2);
 
 
 let timeLeft = 0;
