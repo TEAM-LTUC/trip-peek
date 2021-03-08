@@ -33,11 +33,11 @@ function pickResturent ()
 
 
 function pickActivities(){
+  let lastCat = '';
 
   for ( let i = 0 ; i < Activities.all.length ; i++ ){
 
 
-    let lastCat = '';
 
     if ( plan.planDays[0].planActivities.length < 3 && plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
 

@@ -70,12 +70,12 @@ const h3Element7 = document.createElement ('h3');
 
 
 h3Element1.textContent= 'Plan A / Day #1 (south) :';
-h3Element2.textContent = ' 1) You will stay in --------------> ' + plan.planDays[0].planHotel.name ;
+h3Element2.textContent = ' 1) You will stay in --------------> ' + plan.planDays[0].planHotel.name;
 h3Element3.textContent = ' 2) You will have Breakfast in ----------->'+ plan.planDays[0].planResturent[0].name ;
-h3Element4.textContent = ' 3) Your first Activity ----------->'+ plan.planDays[0].planActivities[0].name ;
-h3Element5.textContent = ' 4) Your second Activity ----------->'+ plan.planDays[0].planActivities[1].name ;
+h3Element4.textContent = ' 3) Your first Activity ----------->'+ plan.planDays[0].planActivities[0].name +'(Catagory :'+plan.planDays[0].planActivities[0].catogery+ ' )';
+h3Element5.textContent = ' 4) Your second Activity ----------->'+ plan.planDays[0].planActivities[1].name +'(Catagory : '+plan.planDays[0].planActivities[1].catogery+ ' )';
 h3Element6.textContent = ' 5) You will have Dinner in----------->'+ plan.planDays[0].planResturent[1].name ;
-h3Element7.textContent = ' 6) Your third Activity ----------->'+ plan.planDays[0].planActivities[2].name ;
+h3Element7.textContent = ' 6) Your third Activity ----------->'+ plan.planDays[0].planActivities[2].name +'(Catagory : '+plan.planDays[0].planActivities[2].catogery+ ' )';
 
 
 
