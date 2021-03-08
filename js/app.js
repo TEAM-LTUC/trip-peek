@@ -144,6 +144,8 @@ function generatResturent ()
   new Resturent ( 'Nur Lebanese Dining','G','middle' );
   new Resturent ( 'Jasmine House','G','middle' );
 
+
+  
 }
 
 
