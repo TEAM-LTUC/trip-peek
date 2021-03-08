@@ -56,42 +56,78 @@ formSubmit.addEventListener( 'submit',handleSubmit );
 
 
 
-function  renderPlan() 
+function renderPlan()
 {
-const divElement = document.getElementById ('renderDiv');
+  const divElement = document.getElementById ('renderDiv');
 
-const h3Element1 = document.createElement ('h3');
-const h3Element2 = document.createElement ('h3');
-const h3Element3 = document.createElement ('h3');
-const h3Element4 = document.createElement ('h3');
-const h3Element5 = document.createElement ('h3');
-const h3Element6 = document.createElement ('h3');
-const h3Element7 = document.createElement ('h3');
-const h3Element8 = document.createElement ('h3');
-
-
-h3Element1.textContent= 'Plan A / Day #1 (south) :';
-h3Element2.textContent = ' 1) You will stay in --------------> ' + plan.planDays[0].planHotel.name ;
-h3Element3.textContent = ' 2) You will have Breakfast in ----------->'+ plan.planDays[0].planResturent[0].name ;
-h3Element4.textContent = ' 3) Your first Activity ----------->'+ plan.planDays[0].planActivities[0].name ;
-h3Element5.textContent = ' 4) Your second Activity ----------->'+ plan.planDays[0].planActivities[1].name ;
-h3Element6.textContent = ' 5) You will have Dinner in----------->'+ plan.planDays[0].planResturent[1].name ;
-h3Element7.textContent = ' 6) Your third Activity ----------->'+ plan.planDays[0].planActivities[2].name ;
-h3Element8.textContent = ' **** Your have this time left : ----------->'+ timeLeft ;
+  const h3Element1 = document.createElement ('h3');
+  const h3Element2 = document.createElement ('h3');
+  const h3Element3 = document.createElement ('h3');
+  const h3Element4 = document.createElement ('h3');
+  const h3Element5 = document.createElement ('h3');
+  const h3Element6 = document.createElement ('h3');
+  const h3Element7 = document.createElement ('h3');
+  const h3Element8 = document.createElement ('h3');
+  const h3Element9 = document.createElement ('h3');
 
 
+  const imgElement1 = document.createElement ('img');
+  const imgElement2 = document.createElement ('img');
+  const imgElement3 = document.createElement ('img');
+  const imgElement4 = document.createElement ('img');
+  const imgElement5 = document.createElement ('img');
+  const imgElement6 = document.createElement ('img');
+  const imgElement7 = document.createElement ('img');
 
-console.log (plan.planDays[0].planHotel.name);
 
-divElement.appendChild(h3Element1);
-divElement.appendChild(h3Element2);
-divElement.appendChild(h3Element3);
-divElement.appendChild(h3Element4);
-divElement.appendChild(h3Element5);
-divElement.appendChild(h3Element6);
-divElement.appendChild(h3Element7);
-divElement.appendChild(h3Element8);
+  h3Element1.textContent= 'Plan A / Day #1 (south) :';
+  h3Element2.textContent = ' 1) You will stay in --------------> ' + plan.planDays[0].planHotel.name ;
+  // imgElement1.innerHTML = `<img src= "${plan.planDays[0].planHotel.imagePath}"  >`;
 
+  imgElement1.innerHTML = '<img src=\"http://placehold.it/350x350\" >' ;
+
+
+  h3Element3.textContent = ' 2) You will have Breakfast in ----------->'+ plan.planDays[0].planResturent[0].name ;
+  imgElement2.innerHTML ='';
+
+  h3Element4.textContent = ' 3) Your first Activity ----------->'+ plan.planDays[0].planActivities[0].name ;
+  imgElement3.innerHTML = '';
+
+  h3Element5.textContent = ' 4) Your second Activity ----------->'+ plan.planDays[0].planActivities[1].name ;
+  imgElement4.innerHTML ='';
+
+  h3Element6.textContent = ' 5) You will have Dinner in----------->'+ plan.planDays[0].planResturent[1].name ;
+  imgElement5.innerHTML ='';
+
+  h3Element7.textContent = ' 6) Your third Activity ----------->'+ plan.planDays[0].planActivities[2].name ;
+  imgElement6.innerHTML ='';
+
+  h3Element8.textContent = ' **** Your have free time : ----------->'+ '(' + timeLeft +')  Hours' ;
+
+  h3Element9.textContent = ' **** Your can do this extra activity : ----------->' ;
+  imgElement7.innerHTML ='';
+
+
+  console.log (plan.planDays[0].planHotel.name);
+
+  divElement.appendChild(h3Element1);
+  divElement.appendChild(h3Element2);
+  divElement.appendChild(h3Element3);
+  divElement.appendChild(h3Element4);
+  divElement.appendChild(h3Element5);
+  divElement.appendChild(h3Element6);
+  divElement.appendChild(h3Element7);
+  divElement.appendChild(h3Element8);
+  divElement.appendChild(h3Element9);
+
+
+  divElement.appendChild(imgElement1);
+  divElement.appendChild(imgElement2);
+  divElement.appendChild(imgElement3);
+  divElement.appendChild(imgElement4);
+  divElement.appendChild(imgElement5);
+  divElement.appendChild(imgElement6);
+  divElement.appendChild(imgElement7);
 
 
 

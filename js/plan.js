@@ -44,8 +44,8 @@ function pickActivities(){
 
       length = plan.planDays[0].planActivities.length;
 
-      for ( let j = length-1 ; j < length ; j++ ){
-        activitiesTimeNeeded.push(plan.planDays[0].planActivities[j].timeNeeded);
+      for ( let k = length-1 ; k < length ; k++ ){
+        activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
         console.log(length, activitiesTimeNeeded);
       }
 
@@ -54,4 +54,29 @@ function pickActivities(){
 
     console.log( plan );
   }
+}
+
+
+
+//let actualTime = 12; // 24h - (7+2+3); 
+//----------> the one we will use 
+
+// test (till catogery function done)
+let actualTime = 15;
+
+
+let timeLeft = 0;
+let activitiesTotalTime = 0;
+
+function timeLeftFunc ()
+{
+  for ( let i = 0 ; i < activitiesTimeNeeded.length ; i++ ){
+
+    activitiesTotalTime = activitiesTotalTime + Number(activitiesTimeNeeded[i]);
+
+    console.log(activitiesTotalTime);
+
+  }
+  timeLeft = actualTime - activitiesTotalTime;
+
 }

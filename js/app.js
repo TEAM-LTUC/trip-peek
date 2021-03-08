@@ -24,18 +24,18 @@ function PlanDay ( dayLocation ) {
 }
 
 
-function Activities (activityname,budget,locationAct,catogery )
+function Activities (activityname,budget,locationAct,catogery,timeNeeded)
 {
   this.name = activityname ;
   this.activityBudget = budget;
   this.location = locationAct;
   this.catogery = catogery;
 
-  this.timeNeeded = 4 ;
+  this.timeNeeded = timeNeeded ;
   Activities.all.push( this );
 
   this.map = '';
-  this.imagePath = '';
+  this.imagePath = 'https://image.freepik.com/free-vector/happy-young-people-enjoying-camping-guy-playing-guitar-students-teenagers-illustration-outdoor-activities-adventure-travel-concept-banner-website-landing-web-page_179970-2118.jpg';
 }
 Activities.all = [];
 
@@ -158,62 +158,61 @@ function generateActivities ()
   
 //--------------------------------------------------------------
   // ----------------------------Low / south
-  new Activities ( 'Activities1','L','south', 'nature');
-  new Activities ( 'Activities2','L','south' , 'nature');
-  new Activities ( 'Activities3','L','south', 'urban');
-  new Activities ( 'Activities4','L','south', 'urban');
-  new Activities ( 'Activities5','L','south', 'handCraft');
-  new Activities ( 'Activities6','L','south', 'handCraft');
-  new Activities ( 'Activities7','L','south', 'historical');
-  new Activities ( 'Activities8','L','south', 'historical');
+  new Activities ( 'Activities1','L','south', 'nature','5');
+  new Activities ( 'Activities2','L','south' , 'nature','5');
+  new Activities ( 'Activities3','L','south', 'urban','4');
+  new Activities ( 'Activities4','L','south', 'urban','4');
+  new Activities ( 'Activities5','L','south', 'handCraft','2');
+  new Activities ( 'Activities6','L','south', 'handCraft','2');
+  new Activities ( 'Activities7','L','south', 'historical','3');
+  new Activities ( 'Activities8','L','south', 'historical','3');
   //-----------------------Low / middle
-  new Activities ( 'Activities9','L','middle', 'nature');
-  new Activities ( 'Activities10','L','middle' , 'nature');
-  new Activities ( 'Activities11','L','middle', 'urban');
-  new Activities ( 'Activities12','L','middle', 'urban');
-  new Activities ( 'Activities13','L','middle', 'handCraft');
-  new Activities ( 'Activities14','L','middle', 'handCraft');
- new Activities ( 'Activities15','L','middle', 'handCraft');
-  new Activities ( 'Activities16','L','middle', 'handCraft');
+  new Activities ( 'Activities9','L','middle', 'nature','5');
+  new Activities ( 'Activities10','L','middle' , 'nature','5');
+  new Activities ( 'Activities11','L','middle', 'urban','4');
+  new Activities ( 'Activities12','L','middle', 'urban','4');
+  new Activities ( 'Activities13','L','middle', 'handCraft','2');
+  new Activities ( 'Activities14','L','middle', 'handCraft','2');
+ new Activities ( 'Activities15','L','middle', 'historical','3');
+  new Activities ( 'Activities16','L','middle', 'historical','3');
   //--------------------------------------------------------------
   //------------------------------------------ Medium / south
-  new Activities ( 'Activities17','M','south', 'nature');
-  new Activities ( 'Activities18','M','south' , 'nature');
-  new Activities ( 'Activities19','M','south', 'urban');
-  new Activities ( 'Activities20','M','south', 'urban');
-  new Activities ( 'Activities21','M','south', 'handCraft');
-  new Activities ( 'Activities22','M','south', 'handCraft');
-  new Activities ( 'Activities23','M','south', 'historical');
-  new Activities ( 'Activities24','M','south', 'historical');
+  new Activities ( 'Activities17','M','south', 'nature','5');
+  new Activities ( 'Activities18','M','south' , 'nature','5');
+  new Activities ( 'Activities19','M','south', 'urban','4');
+  new Activities ( 'Activities20','M','south', 'urban','4');
+  new Activities ( 'Activities21','M','south', 'handCraft','2');
+  new Activities ( 'Activities22','M','south', 'handCraft','2');
+  new Activities ( 'Activities23','M','south', 'historical','3');
+  new Activities ( 'Activities24','M','south', 'historical','3');
   //---------------------------// Medium / middle
-  new Activities ( 'Activities25','M','middle', 'nature');
-  new Activities ( 'Activities26','M','middle' , 'nature');
-  new Activities ( 'Activities27','M','middle', 'urban');
-  new Activities ( 'Activities28','M','middle', 'urban');
-  new Activities ( 'Activities29','M','middle', 'handCraft');
-  new Activities ( 'Activities30','M','middle', 'handCraft');
-  new Activities ( 'Activities31','M','middle', 'historical');
-  new Activities ( 'Activities32','M','middle', 'historical');
+  new Activities ( 'Activities25','M','middle', 'nature','5');
+  new Activities ( 'Activities26','M','middle' , 'nature','5');
+  new Activities ( 'Activities27','M','middle', 'urban','4');
+  new Activities ( 'Activities28','M','middle', 'urban','4');
+  new Activities ( 'Activities29','M','middle', 'handCraft','2');
+  new Activities ( 'Activities30','M','middle', 'handCraft','2');
+  new Activities ( 'Activities31','M','middle', 'historical','3');
+  new Activities ( 'Activities32','M','middle', 'historical','3');
   //---------------------------------------------------------
   //------------------------------------------ Good / south
-  new Activities ( 'Activities33','G','south', 'nature');
-  new Activities ( 'Activities34','G','south' , 'nature');
-  new Activities ( 'Activities35','G','south', 'urban');
-  new Activities ( 'Activities36','G','south', 'urban');
-  new Activities ( 'Activities37','G','south', 'handCraft');
-  new Activities ( 'Activities38','G','south', 'handCraft');
-  new Activities ( 'Activities39','G','south', 'historical');
-  new Activities ( 'Activities40','G','south', 'historical');
+  new Activities ( 'Activities33','G','south', 'nature','5');
+  new Activities ( 'Activities34','G','south' , 'nature','5');
+  new Activities ( 'Activities35','G','south', 'urban','4');
+  new Activities ( 'Activities36','G','south', 'urban','4');
+  new Activities ( 'Activities37','G','south', 'handCraft','2');
+  new Activities ( 'Activities38','G','south', 'handCraft','2');
+  new Activities ( 'Activities39','G','south', 'historical','3');
+  new Activities ( 'Activities40','G','south', 'historical','3');
   //---------------------------// Medium / middle
-  new Activities ( 'Activities41','G','middle', 'nature');
-  new Activities ( 'Activities42','G','middle' , 'nature');
-  new Activities ( 'Activities43','G','middle', 'urban');
-  new Activities ( 'Activities44','G','middle', 'urban');
-  new Activities ( 'Activities45','G','middle', 'handCraft');
-  new Activities ( 'Activities46','G','middle', 'handCraft');
-  new Activities ( 'Activities47','G','middle', 'historical');
-  new Activities ( 'Activities48','G','middle', 'historical');
-  
+  new Activities ( 'Activities41','G','middle', 'nature','5');
+  new Activities ( 'Activities42','G','middle' , 'nature','5');
+  new Activities ( 'Activities43','G','middle', 'urban','4');
+  new Activities ( 'Activities44','G','middle', 'urban','4');
+  new Activities ( 'Activities45','G','middle', 'handCraft','2');
+  new Activities ( 'Activities46','G','middle', 'handCraft','2');
+  new Activities ( 'Activities47','G','middle', 'historical','3');
+  new Activities ( 'Activities48','G','middle', 'historical','3');
   console.log( Activities.all );
 }
 
