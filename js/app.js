@@ -32,10 +32,11 @@ function Activities (activityname,budget,locationAct,catogery,timeNeeded)
   this.catogery = catogery;
 
   this.timeNeeded = timeNeeded ;
-  Activities.all.push( this );
 
   this.map = '';
   this.imagePath = '' ;
+  Activities.all.push( this );
+
 }
 Activities.all = [];
 
@@ -47,10 +48,11 @@ function Resturent ( name,resturentBudget,location )
   this.resturentBudget = resturentBudget;
   this.location = location;
 
-  Resturent.all.push( this );
 
   this.map = '';
   this.imagePath = '';
+  Resturent.all.push( this );
+
 }
 Resturent.all = [];
 
@@ -63,10 +65,11 @@ function Hotel ( name,hotelBudget,location )
   this.hotelBudget = hotelBudget;
   this.location = location;
 
-  Hotel.all.push( this );
+  
 
   this.map = '';
   this.imagePath = '';
+  Hotel.all.push( this );
 }
 Hotel.all = [] ;
 
