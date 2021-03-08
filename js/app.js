@@ -95,17 +95,17 @@ Plan.prototype.saveToLocalStorage = function() {
 
 function generateHotel ()
 {
-  new Hotel ( 'Hotel1','L','south' );
-  new Hotel ( 'Hotel2','L','north' );
-  new Hotel ( 'Hotel3','L','middle' );
+  new Hotel ( 'Samara Resort','L','south' );
+  new Hotel ( 'Al-Joud hotel','L','north' );
+  new Hotel ( 'Larsa Hotel Amman','L','middle' );
 
-  new Hotel ( 'Hotel4','M','south' );
-  new Hotel ( 'Hotel5','M','north' );
-  new Hotel ( 'Hotel6','M','middle' );
+  new Hotel ( 'Kempinski','M','south' );
+  new Hotel ( '7 Stars Hotel','M','north' );
+  new Hotel ( 'Royal','M','middle' );
 
-  new Hotel ( 'Hotel7','G','south' );
-  new Hotel ( 'Hotel8','G','north' );
-  new Hotel ( 'Hotel9','G','middle' );
+  new Hotel ( 'Hayatt Regency','G','south' );
+  new Hotel ( 'Ajloun Forest Reserve','G','north' );
+  new Hotel ( 'Movenpick Hotel','G','middle' );
 
   console.log( Hotel.all );
 }
@@ -118,26 +118,26 @@ generateHotel ();
 
 function generatResturent ()
 {
-  new Resturent ( 'Resturent1','L','south' );
-  new Resturent ( 'Resturent2','L','south' );
-  new Resturent ( 'Resturent3','L','north' );
-  new Resturent ( 'Resturent4','L','north' );
-  new Resturent ( 'Resturent5','L','middle' );
-  new Resturent ( 'Resturent6','L','middle' );
+  new Resturent ( 'Khubza & Seneya','L','south' );
+  new Resturent ( 'Rovers Return','L','south' );
+  new Resturent ( 'Summaga Cafe','L','north' );
+  new Resturent ( 'Palestine Restaurant','L','north' );
+  new Resturent ( 'Hashim','L','middle' );
+  new Resturent ( 'Abu Zaghleh','L','middle' );
   //----------------------------------------------
-  new Resturent ( 'Resturent7','M','south' );
-  new Resturent ( 'Resturent8','M','south' );
-  new Resturent ( 'Resturent9','M','north' );
-  new Resturent ( 'Resturent10','M','north' );
-  new Resturent ( 'Resturent11','M','middle' );
-  new Resturent ( 'Resturent12','M','middle' );
+  new Resturent ( 'Mirwas Restaurant and Cafe','M','south' );
+  new Resturent ( 'Gaadet Jeeran','M','south' );
+  new Resturent ( 'AlHaram Resaurant & Cafe','M','north' );
+  new Resturent ( 'Chimney House','M','north' );
+  new Resturent ( 'Eostrix Gastro Pub','M','middle' );
+  new Resturent ( 'Konya Turkish Restaurant','M','middle' );
   //------------------------------------------------
-  new Resturent ( 'Resturent13','G','south' );
-  new Resturent ( 'Resturent14','G','south' );
-  new Resturent ( 'Resturent15','G','north' );
-  new Resturent ( 'Resturent16','G','north' );
-  new Resturent ( 'Resturent17','G','middle' );
-  new Resturent ( 'Resturent18','G','middle' );
+  new Resturent ( 'Bacchus Restaurant','G','south' );
+  new Resturent ( 'Obelisk Restaurant','G','south' );
+  new Resturent ( 'Umm Qais Rest House','G','north' );
+  new Resturent ( 'Lebanese House Um Khalil Restaurant','G','north' );
+  new Resturent ( 'Nur Lebanese Dining','G','middle' );
+  new Resturent ( 'Jasmine House','G','middle' );
 
   console.log( Resturent.all );
 }
@@ -153,61 +153,61 @@ function generateActivities ()
 
   //--------------------------------------------------------------
   // ----------------------------Low / south
-  new Activities ( 'Activities1','L','south', 'nature','5');
-  new Activities ( 'Activities2','L','south' , 'nature','5');
-  new Activities ( 'Activities3','L','south', 'urban','4');
-  new Activities ( 'Activities4','L','south', 'urban','4');
-  new Activities ( 'Activities5','L','south', 'handCraft','2');
-  new Activities ( 'Activities6','L','south', 'handCraft','2');
-  new Activities ( 'Activities7','L','south', 'historical','3');
-  new Activities ( 'Activities8','L','south', 'historical','3');
+  new Activities ( 'HIKING','L','south', 'nature','5');
+  new Activities ( 'CYCLING','L','south' , 'nature','5');
+  new Activities ( 'Muta University','L','south', 'urban','4');
+  new Activities ( 'Karak Tourism Center ','L','south', 'urban','4');
+  new Activities ( 'Making Kohl','L','south', 'handCraft','2');
+  new Activities ( 'Mosaic','L','south', 'handCraft','2');
+  new Activities ( 'Karak Citadel','L','south', 'historical','3');
+  new Activities ( 'Wadi Araba','L','south', 'historical','3');
   //-----------------------Low / middle
-  new Activities ( 'Activities9','L','middle', 'nature','5');
-  new Activities ( 'Activities10','L','middle' , 'nature','5');
-  new Activities ( 'Activities11','L','middle', 'urban','4');
-  new Activities ( 'Activities12','L','middle', 'urban','4');
-  new Activities ( 'Activities13','L','middle', 'handCraft','2');
-  new Activities ( 'Activities14','L','middle', 'handCraft','2');
-  new Activities ( 'Activities15','L','middle', 'historical','3');
-  new Activities ( 'Activities16','L','middle', 'historical','3');
+  new Activities ( 'King Hussein Park','L','middle', 'nature','5');
+  new Activities ( 'Bahrain Kingdom forest','L','middle' , 'nature','5');
+  new Activities ( 'Boulevard Al-Abdali','L','middle', 'urban','4');
+  new Activities ( 'Jordan Museum Of Popular Tradition','L','middle', 'urban','4');
+  new Activities ( 'Wadi Finan','L','middle', 'handCraft','2');
+  new Activities ( 'Dar Al-anda','L','middle', 'handCraft','2');
+  new Activities ( 'Iraq Al-Amir','L','middle', 'historical','3');
+  new Activities ( 'The Hashemite Square','L','middle', 'historical','3');
   //--------------------------------------------------------------
   //------------------------------------------ Medium / south
-  new Activities ( 'Activities17','M','south', 'nature','5');
-  new Activities ( 'Activities18','M','south' , 'nature','5');
-  new Activities ( 'Activities19','M','south', 'urban','4');
-  new Activities ( 'Activities20','M','south', 'urban','4');
-  new Activities ( 'Activities21','M','south', 'handCraft','2');
-  new Activities ( 'Activities22','M','south', 'handCraft','2');
-  new Activities ( 'Activities23','M','south', 'historical','3');
-  new Activities ( 'Activities24','M','south', 'historical','3');
+  new Activities ( 'CANYONING','M','south', 'nature','5');
+  new Activities ( 'RUM SKY','M','south' , 'nature','5');
+  new Activities ( 'Masada National Park','M','south', 'urban','4');
+  new Activities ( 'AL-TAFILA ECHO; Interpretation And Visitors Center','M','south', 'urban','4');
+  new Activities ( 'DAY WITH SHEPHERD','M','south', 'handCraft','2');
+  new Activities ( 'ZARB DESERT CAMP','M','south', 'handCraft','2');
+  new Activities ( 'Al-Humaimah','M','south', 'historical','3');
+  new Activities ( 'Wadi Musa','M','south', 'historical','3');
   //---------------------------// Medium / middle
-  new Activities ( 'Activities25','M','middle', 'nature','5');
-  new Activities ( 'Activities26','M','middle' , 'nature','5');
-  new Activities ( 'Activities27','M','middle', 'urban','4');
-  new Activities ( 'Activities28','M','middle', 'urban','4');
-  new Activities ( 'Activities29','M','middle', 'handCraft','2');
-  new Activities ( 'Activities30','M','middle', 'handCraft','2');
-  new Activities ( 'Activities31','M','middle', 'historical','3');
-  new Activities ( 'Activities32','M','middle', 'historical','3');
+  new Activities ( 'ANCIENT RUINS','M','middle', 'nature','5');
+  new Activities ( 'GREEK ORTHODOX CHURCH','M','middle' , 'nature','5');
+  new Activities ( 'Beit Sitti','M','middle', 'urban','4');
+  new Activities ( 'Jordan Folklore Museum','M','middle', 'urban','4');
+  new Activities ( 'Royal Automobile Museum','M','middle', 'handCraft','2');
+  new Activities ( 'Children Museum','M','middle', 'handCraft','2');
+  new Activities ( 'Roman Nymphaeum','M','middle', 'historical','3');
+  new Activities ( 'Temple Of Hercules','M','middle', 'historical','3');
   //---------------------------------------------------------
   //------------------------------------------ Good / south
-  new Activities ( 'Activities33','G','south', 'nature','5');
-  new Activities ( 'Activities34','G','south' , 'nature','5');
-  new Activities ( 'Activities35','G','south', 'urban','4');
-  new Activities ( 'Activities36','G','south', 'urban','4');
-  new Activities ( 'Activities37','G','south', 'handCraft','2');
-  new Activities ( 'Activities38','G','south', 'handCraft','2');
-  new Activities ( 'Activities39','G','south', 'historical','3');
-  new Activities ( 'Activities40','G','south', 'historical','3');
+  new Activities ( 'CAMPING','G','south', 'nature','5');
+  new Activities ( 'JEEP TOUR','G','south' , 'nature','5');
+  new Activities ( 'Ayla Oasis','G','south', 'urban','4');
+  new Activities ( 'Aqaba South Gulf','G','south', 'urban','4');
+  new Activities ( 'NATURE CINEMA','G','south', 'handCraft','2');
+  new Activities ( 'WEAVING GOAT HAIRED TENTS','G','south', 'handCraft','2');
+  new Activities ( 'Petra','G','south', 'historical','3');
+  new Activities ( 'Wadi Rum','G','south', 'historical','3');
   //---------------------------// Medium / middle
-  new Activities ( 'Activities41','G','middle', 'nature','5');
-  new Activities ( 'Activities42','G','middle' , 'nature','5');
-  new Activities ( 'Activities43','G','middle', 'urban','4');
-  new Activities ( 'Activities44','G','middle', 'urban','4');
-  new Activities ( 'Activities45','G','middle', 'handCraft','2');
-  new Activities ( 'Activities46','G','middle', 'handCraft','2');
-  new Activities ( 'Activities47','G','middle', 'historical','3');
-  new Activities ( 'Activities48','G','middle', 'historical','3');
+  new Activities ( 'Nepo Mountain','G','middle', 'nature','5');
+  new Activities ( 'Wadi Almujeb','G','middle' , 'nature','5');
+  new Activities ( 'National Archaeological Museum','G','middle', 'urban','4');
+  new Activities ( 'Jordan National Gallery Of Fine Art','G','middle', 'urban','4');
+  new Activities ( 'Jadal','G','middle', 'handCraft','2');
+  new Activities ( 'Skyline Sushi Cooking Class','G','middle', 'handCraft','2');
+  new Activities ( 'Roman Theater','G','middle', 'historical','3');
+  new Activities ( 'Castel Mountain','G','middle', 'historical','3');
   console.log( Activities.all );
 }
 

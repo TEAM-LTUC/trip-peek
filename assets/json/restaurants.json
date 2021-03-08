@@ -1,18 +1,6 @@
 {
     "Resturent": [
         {
-            "name": "Hashim",
-            "resturentBudget": "L",
-            "location": "middle",
-            "timeNeeded": "1"
-        },
-        {
-            "name": "Abu Zaghleh",
-            "resturentBudget": "L",
-            "location": "middle",
-            "timeNeeded": "1"
-        },
-        {
             "name": "Khubza & Seneya",
             "resturentBudget": "L",
             "location": "south",
@@ -25,14 +13,26 @@
             "timeNeeded": "1"
         },
         {
-            "name": "Eostrix Gastro Pub",
-            "resturentBudget": "M",
+            "name": "Summaga Cafe",
+            "resturentBudget": "L",
+            "location": "north",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Palestine Restaurant",
+            "resturentBudget": "L",
+            "location": "north",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Hashim",
+            "resturentBudget": "L",
             "location": "middle",
             "timeNeeded": "1"
         },
         {
-            "name": "Konya Turkish Restaurant",
-            "resturentBudget": "M",
+            "name": "Abu Zaghleh",
+            "resturentBudget": "L",
             "location": "middle",
             "timeNeeded": "1"
         },
@@ -49,14 +49,26 @@
             "timeNeeded": "1"
         },
         {
-            "name": "Nur Lebanese Dining",
-            "resturentBudget": "G",
+            "name": "AlHaram Resaurant & Cafe",
+            "resturentBudget": "M",
+            "location": "north",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Chimney House",
+            "resturentBudget": "M",
+            "location": "north",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Eostrix Gastro Pub",
+            "resturentBudget": "M",
             "location": "middle",
             "timeNeeded": "1"
         },
         {
-            "name": "Jasmine House",
-            "resturentBudget": "G",
+            "name": "Konya Turkish Restaurant",
+            "resturentBudget": "M",
             "location": "middle",
             "timeNeeded": "1"
         },
@@ -70,6 +82,30 @@
             "name": "Obelisk Restaurant",
             "resturentBudget": "G",
             "location": "south",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Umm Qais Rest House",
+            "resturentBudget": "G",
+            "location": "north",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Lebanese House Um Khalil Restaurant",
+            "resturentBudget": "G",
+            "location": "north",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Nur Lebanese Dining",
+            "resturentBudget": "G",
+            "location": "middle",
+            "timeNeeded": "1"
+        },
+        {
+            "name": "Jasmine House",
+            "resturentBudget": "G",
+            "location": "middle",
             "timeNeeded": "1"
         }
     ]

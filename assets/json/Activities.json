@@ -1,298 +1,18 @@
 {
     "Activities ": [
         {
-            "name": "Iraq Al-Amir",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "The Hashemite Square",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Roman Nymphaeum",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Temple Of Hercules",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Roman Theater",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Castel Mountain",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Wadi Finan",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "Dar Al-anda",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "Royal Automobile Museum",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "Children Museum",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "Jadal",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "Skyline Sushi Cooking Class",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "King Hussein Park",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "Bahrain Kingdom forest",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "ANCIENT RUINS",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "GREEK ORTHODOX CHURCH ",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "Nepo Mountain",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "Wadi Almujeb",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "Boulevard Al-Abdali",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "4",
-            "category": "urban"
-        },
-        {
-            "name": "Jordan Museum Of Popular Tradition",
-            "activityBudget": "L",
-            "location": "middle",
-            "timeNeeded": "4",
-            "category": "urban"
-        },
-        {
-            "name": "Beit Sitti",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "4",
-            "category": "urban"
-        },
-        {
-            "name": "Jordan Folklore Museum",
-            "activityBudget": "M",
-            "location": "middle",
-            "timeNeeded": "4",
-            "category": "urban"
-        },
-        {
-            "name": "National Archaeological Museum",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "4",
-            "category": "urban"
-        },
-        {
-            "name": "Jordan National Gallery Of Fine Art",
-            "activityBudget": "G",
-            "location": "middle",
-            "timeNeeded": "4",
-            "category": "urban"
-        },
-        {
-            "name": "Karak Citadel",
-            "activityBudget": "L",
-            "location": "south",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Wadi Araba",
-            "activityBudget": "L",
-            "location": "south",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Al-Humaimah",
-            "activityBudget": "M",
-            "location": "south",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Wadi Musa",
-            "activityBudget": "M",
-            "location": "south",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Petra",
-            "activityBudget": "G",
-            "location": "south",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Wadi Rum",
-            "activityBudget": "G",
-            "location": "south",
-            "timeNeeded": "3",
-            "category": "historical"
-        },
-        {
-            "name": "Making Kohl",
-            "activityBudget": "L",
-            "location": "south",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "Mosaic",
-            "activityBudget": "L",
-            "location": "south",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "DAY WITH SHEPHERD",
-            "activityBudget": "M",
-            "location": "south",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "ZARB DESERT CAMP",
-            "activityBudget": "M",
-            "location": "south",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "NATURE CINEMA",
-            "activityBudget": "G",
-            "location": "south",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
-            "name": "WEAVING GOAT HAIRED TENTS",
-            "activityBudget": "G",
-            "location": "south",
-            "timeNeeded": "2",
-            "category": "handcrafts"
-        },
-        {
             "name": "HIKING",
             "activityBudget": "L",
             "location": "south",
             "timeNeeded": "5",
-            "category": "adventure and nature"
+            "category": "nature"
         },
         {
             "name": "CYCLING",
             "activityBudget": "L",
             "location": "south",
             "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "CANYONING",
-            "activityBudget": "M",
-            "location": "south",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "RUM SKY",
-            "activityBudget": "M",
-            "location": "south",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "CAMPING",
-            "activityBudget": "G",
-            "location": "south",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
-        },
-        {
-            "name": "JEEP TOUR",
-            "activityBudget": "G",
-            "location": "south",
-            "timeNeeded": "5",
-            "category": "adventure and nature"
+            "category": "nature"
         },
         {
             "name": "Muta University",
@@ -309,6 +29,104 @@
             "category": "urban"
         },
         {
+            "name": "Making Kohl",
+            "activityBudget": "L",
+            "location": "south",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Mosaic",
+            "activityBudget": "L",
+            "location": "south",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Karak Citadel",
+            "activityBudget": "L",
+            "location": "south",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "Wadi Araba",
+            "activityBudget": "L",
+            "location": "south",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "King Hussein Park",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "Bahrain Kingdom forest",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "Boulevard Al-Abdali",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "4",
+            "category": "urban"
+        },
+        {
+            "name": "Jordan Museum Of Popular Tradition",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "4",
+            "category": "urban"
+        },
+        {
+            "name": "Wadi Finan",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Dar Al-anda",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Iraq Al-Amir",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "The Hashemite Square",
+            "activityBudget": "L",
+            "location": "middle",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "CANYONING",
+            "activityBudget": "M",
+            "location": "south",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "RUM SKY",
+            "activityBudget": "M",
+            "location": "south",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
             "name": "Masada National Park",
             "activityBudget": "M",
             "location": "south",
@@ -323,6 +141,104 @@
             "category": "urban"
         },
         {
+            "name": "DAY WITH SHEPHERD",
+            "activityBudget": "M",
+            "location": "south",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "ZARB DESERT CAMP",
+            "activityBudget": "M",
+            "location": "south",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Al-Humaimah",
+            "activityBudget": "M",
+            "location": "south",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "Wadi Musa",
+            "activityBudget": "M",
+            "location": "south",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "ANCIENT RUINS",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "GREEK ORTHODOX CHURCH ",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "Beit Sitti",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "4",
+            "category": "urban"
+        },
+        {
+            "name": "Jordan Folklore Museum",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "4",
+            "category": "urban"
+        },
+        {
+            "name": "Royal Automobile Museum",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Children Museum",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Roman Nymphaeum",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "Temple Of Hercules",
+            "activityBudget": "M",
+            "location": "middle",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "CAMPING",
+            "activityBudget": "G",
+            "location": "south",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "JEEP TOUR",
+            "activityBudget": "G",
+            "location": "south",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
             "name": "Ayla Oasis",
             "activityBudget": "G",
             "location": "south",
@@ -335,6 +251,90 @@
             "location": "south",
             "timeNeeded": "4",
             "category": "urban"
+        },
+        {
+            "name": "NATURE CINEMA",
+            "activityBudget": "G",
+            "location": "south",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "WEAVING GOAT HAIRED TENTS",
+            "activityBudget": "G",
+            "location": "south",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Petra",
+            "activityBudget": "G",
+            "location": "south",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "Wadi Rum",
+            "activityBudget": "G",
+            "location": "south",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "Nepo Mountain",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "Wadi Almujeb",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "5",
+            "category": "nature"
+        },
+        {
+            "name": "National Archaeological Museum",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "4",
+            "category": "urban"
+        },
+        {
+            "name": "Jordan National Gallery Of Fine Art",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "4",
+            "category": "urban"
+        },
+        {
+            "name": "Jadal",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Skyline Sushi Cooking Class",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "2",
+            "category": "handcrafts"
+        },
+        {
+            "name": "Roman Theater",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "3",
+            "category": "historical"
+        },
+        {
+            "name": "Castel Mountain",
+            "activityBudget": "G",
+            "location": "middle",
+            "timeNeeded": "3",
+            "category": "historical"
         }
     ]
 }

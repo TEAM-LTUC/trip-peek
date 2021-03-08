@@ -1,20 +1,20 @@
 {
     "Hotel": [
         {
-            "name": "Larsa Hotel Amman",
-            "hotelBudget": "L",
-            "location": "middle",
-            "timeNeeded": "7"
-        },
-        {
             "name": "Samara Resort",
             "hotelBudget": "L",
             "location": "south",
             "timeNeeded": "7"
         },
         {
-            "name": "Royal",
-            "hotelBudget": "M",
+            "name": "Al-Joud hotel",
+            "hotelBudget": "L",
+            "location": "north",
+            "timeNeeded": "7"
+        },
+        {
+            "name": "Larsa Hotel Amman",
+            "hotelBudget": "L",
             "location": "middle",
             "timeNeeded": "7"
         },
@@ -25,8 +25,14 @@
             "timeNeeded": "7"
         },
         {
-            "name": "Movenpick Hotel",
-            "hotelBudget": "G",
+            "name": "7 Stars Hotel",
+            "hotelBudget": "M",
+            "location": "north",
+            "timeNeeded": "7"
+        },
+        {
+            "name": "Royal",
+            "hotelBudget": "M",
             "location": "middle",
             "timeNeeded": "7"
         },
@@ -34,6 +40,18 @@
             "name": "Hayatt Regency",
             "hotelBudget": "G",
             "location": "south",
+            "timeNeeded": "7"
+        },
+        {
+            "name": "Ajloun Forest Reserve",
+            "hotelBudget": "G",
+            "location": "south",
+            "timeNeeded": "7"
+        },
+        {
+            "name": "Movenpick Hotel",
+            "hotelBudget": "G",
+            "location": "middle",
             "timeNeeded": "7"
         }
     ]

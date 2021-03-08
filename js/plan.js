@@ -78,7 +78,7 @@ function pickActivities(){
 
 
 
-let actualTime = 15; // 24h - (7+2);
+let actualTime = 12; // 24h - (7+2);
 
 
 let timeLeft = 0;
