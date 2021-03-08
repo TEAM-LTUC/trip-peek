@@ -2,6 +2,8 @@
 // pick a hotel // fill planHotel in planDay obj
 'use strict';
 
+let activitiesTimeTotal = 0;
+
 function pickActivities(){
 
   for ( let i = 0 ; i < Activities.all.length ; i++ ){
@@ -32,8 +34,6 @@ function pickResturent ()
   for ( let i = 0 ; i < Resturent.all.length ; i++ ){
     if ( plan.budget === Resturent.all[i].resturentBudget && plan.planDays[0].dayLocation === Resturent.all[i].location ) {
       plan.planDays[0].planResturent.push( Resturent.all[i] );
-
-
     }
 
 

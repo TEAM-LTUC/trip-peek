@@ -14,7 +14,7 @@ function handleSubmit( event ) {
   pickHotel();
   pickResturent();
   pickActivities();
-
+  timeLeftFunc();
   renderPlan();
 }
 // TODO: get data from form , add the form data to plan object
@@ -67,6 +67,7 @@ const h3Element4 = document.createElement ('h3');
 const h3Element5 = document.createElement ('h3');
 const h3Element6 = document.createElement ('h3');
 const h3Element7 = document.createElement ('h3');
+const h3Element8 = document.createElement ('h3');
 
 
 h3Element1.textContent= 'Plan A / Day #1 (south) :';
@@ -76,6 +77,7 @@ h3Element4.textContent = ' 3) Your first Activity ----------->'+ plan.planDays[0
 h3Element5.textContent = ' 4) Your second Activity ----------->'+ plan.planDays[0].planActivities[1].name ;
 h3Element6.textContent = ' 5) You will have Dinner in----------->'+ plan.planDays[0].planResturent[1].name ;
 h3Element7.textContent = ' 6) Your third Activity ----------->'+ plan.planDays[0].planActivities[2].name ;
+h3Element8.textContent = ' **** Your have this time left : ----------->'+ timeLeft ;
 
 
 
@@ -88,6 +90,7 @@ divElement.appendChild(h3Element4);
 divElement.appendChild(h3Element5);
 divElement.appendChild(h3Element6);
 divElement.appendChild(h3Element7);
+divElement.appendChild(h3Element8);
 
 
 
