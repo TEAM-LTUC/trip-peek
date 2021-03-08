@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;}
+body{
+    width: 100%;
+    margin: auto;
+    height: max-content;
+}
+
+  header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    grid-row: 1 /2;
+  }
+header img {
+    float: left;
+    padding: 30px 70px;
+}
+header section ul {
+    margin: 0 0 0 70% ;
+}
+header section ul li {
+    display: inline;
+    padding: 30px 3px;  
+    text-transform: uppercase;
+}
+header section ul li a{
+    color:black;
+    text-decoration: none;
+}
+
+footer  ul li {
+    display: inline;
+    list-style: none;
+    float: left;
+    padding: 5px;
+}
+footer{
+    height: 130px;
+    text-align: center;
+    padding-top: 15px;
+        
+}
+footer  ul li img{
+    padding: auto; 
+        
+} 
+footer b{
+    float: right;
+    margin-right: 50px;
+    padding: auto;
+}
+footer img {
+    padding-left: 10px;
+}
+h1{
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: smaller;
+}
+main h3 {
+
+    font-weight: normal;
+    font-size: x-large;
+    text-transform: capitalize;
+    text-align: center;
+    height: 60px;
+}
+.main{
+    background-color: lightgray;
+    /* display: inline-flex; */
+    margin: auto;
+    text-align: center;
+    height: 900px;
+    width: 700px;
+    padding: 70px;
+    font-size: 20px;
+    /* padding-top: 100px; */
+    
+}
+form {
+    margin-top: 100px;
+}
+label {
+    font-size: xx-large;
+}
+img {
+    z-index: +2;
+}
+main{
+
+    font:  4em sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* #tripForm {
+    align-items: center;
+} */
+
+#time {
+    /* width: 25%;
+    height: 30px;
+    margin-left: 40%; */
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+#budget {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+
+
+.n1 {
+    font-size: x-large;
+    text-transform: capitalize;
+    
+    
+}
+#radioButton {
+    text-align: left;
+    padding-left: 120px;
+}
+
+.p1 {
+    font-size: xx-large;
+    text-transform: capitalize;
+}
+
+input.n2 {
+  width: 30px;
+  height: 20px;
+    
+}
