@@ -40,20 +40,20 @@ function render() {
 
 
 
-  let h5Element = document.getElementById("h5");
+  let h5Element = document.getElementById("h6");
   h5Element.textContent = treePlanConnector.planDays[0].planActivities[2].name;
-  let p9Element = document.getElementById("time5");
+  let p9Element = document.getElementById("time6");
   p9Element.textContent = "Expected Time Duration : " + treePlanConnector.planDays[0].planActivities[2].timeNeeded + " Hours ";
   let p35Element=document.getElementById("cat3");
   p35Element.textContent= "Catogery : "+treePlanConnector.planDays[0].planActivities[2].catogery;
-  let p10Element = document.getElementById("location5");
+  let p10Element = document.getElementById("location6");
   p10Element.textContent = "Location : "+treePlanConnector.planDays[0].planActivities[2].location;
 
 
 
-  let h6Element = document.getElementById("h6");
+  let h6Element = document.getElementById("h5");
   h6Element.textContent = treePlanConnector.planDays[0].planResturent[1].name;
-  let p12Element = document.getElementById("location6");
+  let p12Element = document.getElementById("location5");
   p12Element.textContent = "Location : "+treePlanConnector.planDays[0].planResturent[1].location;
 
 
@@ -75,7 +75,7 @@ function hotelStore(event){
     console.log(event);
 
   }
-  if (event.target.innerHTML === treePlanConnector.planDays[0].planResturent[1].name){
+  if (event.target.textContent === treePlanConnector.planDays[0].planResturent[1].name){
     const myRest = treePlanConnector.planDays[0].planResturent[1];
     localStorage.setItem('renderme',JSON.stringify(myRest));
     console.log(event);
