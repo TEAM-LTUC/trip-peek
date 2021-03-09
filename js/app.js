@@ -21,7 +21,7 @@ function PlanDay ( dayLocation ) {
   this.dayLocation = dayLocation; // day1 : north / day2:middle / day3:south
 
   this.planResturent = []; // array of Resturent objects
-  this.planHotel; // contains Hotel Object
+  this.planHotel={}; // contains Hotel Object
   this.planActivities = []; // array of Activities objects
 }
 
@@ -83,11 +83,9 @@ Plan.prototype.getFormData = function ( numOfDays,budget,catogeries,governorateN
   this.numOfDays = numOfDays;
   this.budget = budget;
   this.catogeries = catogeries;
-  console.log( this );
-
-  
+ 
   const planDay1 = new PlanDay (governorateName);
-  this.planDays.push( planDay1 );
+  this.planDays[0]=  planDay1 ;
 };
 
 
@@ -219,6 +217,5 @@ function generateActivities ()
 
 generateActivities ();
 
-console.log(Activities.all)
 
 

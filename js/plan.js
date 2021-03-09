@@ -5,19 +5,21 @@
 let activitiesTimeNeeded = []; // arr of activity's timeNeeded
 
 
-let counterSet =0;
-function pickHotel() {
 
+
+function pickHotel() {
+  let contHotel=0;
 
   do{
     let i = randomNumber(0,(Hotel.all.length-1));
     if ( plan.budget === Hotel.all[i].hotelBudget && plan.planDays[0].dayLocation === Hotel.all[i].location ) {
       plan.planDays[0].planHotel = Hotel.all[i];
+      contHotel+=1;
 
     }
 
 
-  }while(!(plan.planDays[0].planHotel));
+  }while(!(contHotel));
 
 }
 // pick 2 resturents // fill planResturent array in planDay obj
@@ -42,10 +44,13 @@ function pickActivities(){
   let length;
   let lastCat = '';
   let listLastCat = [];
+  console.log(Resturent.all);
+  console.log(Hotel.all);
+  console.log(Activities.all);
 
   do{
 
-    let i = randomNumber(0,(Activities.all.length));
+    let i = randomNumber(0,(Activities.all.length-1));
 
     if ( plan.planDays[0].planActivities.length < 3 && plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
 
@@ -56,13 +61,6 @@ function pickActivities(){
           lastCat= Activities.all[i].catogery;
           listLastCat.push(lastCat);
 
-
-          for ( let k = length-1 ; k < length ; k++ ){
-            activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
-            console.log(length, activitiesTimeNeeded);
-          }
-
-
         }
 
 
@@ -72,7 +70,6 @@ function pickActivities(){
     }
 
 
-    console.log( plan );
   }while(!(plan.planDays[0].planActivities.length === plan.catogeries.length ));
 }
 
@@ -80,21 +77,21 @@ function pickActivities(){
 
 
 
-let actualTime = 15; // 24h - (7+2);
+// let actualTime = 15; // 24h - (7+2);
 
 
-let timeLeft = 0;
-let activitiesTotalTime = 0;
+// let timeLeft = 0;
+// let activitiesTotalTime = 0;
 
-function timeLeftFunc ()
-{
-  for ( let i = 0 ; i < activitiesTimeNeeded.length ; i++ ){
+// function timeLeftFunc ()
+// {
+//   for ( let i = 0 ; i < activitiesTimeNeeded.length ; i++ ){
 
-    activitiesTotalTime = activitiesTotalTime + Number(activitiesTimeNeeded[i]);
+//     activitiesTotalTime = activitiesTotalTime + Number(activitiesTimeNeeded[i]);
 
-    console.log(activitiesTotalTime);
+//     console.log(activitiesTotalTime);
 
-  }
-  timeLeft = actualTime - activitiesTotalTime;
+//   }
+//   timeLeft = actualTime - activitiesTotalTime;
 
-}
+// }

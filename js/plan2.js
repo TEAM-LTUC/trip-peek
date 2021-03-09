@@ -14,13 +14,13 @@ let activitiesTimeNeeded = []; // arr of activity's timeNeeded
 
 function pickHotel() {
 
-
+  console.log('hello from hotel');
   for ( let i = 0 ; i < Hotel.all.length ; i++ ){
     if ( plan.budget === Hotel.all[i].hotelBudget && plan.planDays[0].dayLocation === Hotel.all[i].location ) {
       plan.planDays[0].planHotel = Hotel.all[i];
 
     }
-
+    
 
   }
 
@@ -28,6 +28,7 @@ function pickHotel() {
 // pick 2 resturents // fill planResturent array in planDay obj
 function pickResturent ()
 {
+  console.log('hello from resturant');
   for ( let i = 0 ; i < Resturent.all.length ; i++ ){
     if ( plan.budget === Resturent.all[i].resturentBudget && plan.planDays[0].dayLocation === Resturent.all[i].location ) {
       plan.planDays[0].planResturent.push( Resturent.all[i] );
@@ -43,6 +44,8 @@ function pickResturent ()
 function pickActivities(){
   let length;
   let lastCat;
+  console.log('hello from activities');
+
   for ( let i = 0 ; i < Activities.all.length ; i++ ){
     if ( plan.planDays[0].planActivities.length < 3
       && plan.budget === Activities.all[i].activityBudget
