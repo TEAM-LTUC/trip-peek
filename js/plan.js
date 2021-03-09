@@ -5,55 +5,57 @@
 let activitiesTimeNeeded = []; // arr of activity's timeNeeded
 
 
+let counterSet =0;
 function pickHotel() {
 
 
-  for ( let i = 0 ; i < Hotel.all.length ; i++ ){
+  do{
+    let i = randomNumber(0,(Hotel.all.length-1));
     if ( plan.budget === Hotel.all[i].hotelBudget && plan.planDays[0].dayLocation === Hotel.all[i].location ) {
       plan.planDays[0].planHotel = Hotel.all[i];
 
     }
 
 
-  }
+  }while(!(plan.planDays[0].planHotel));
 
 }
 // pick 2 resturents // fill planResturent array in planDay obj
 function pickResturent ()
 {
-  for ( let i = 0 ; i < Resturent.all.length ; i++ ){
-    if ( plan.budget === Resturent.all[i].resturentBudget && plan.planDays[0].dayLocation === Resturent.all[i].location ) {
-      plan.planDays[0].planResturent.push( Resturent.all[i] );
+  let lastResturant;
 
+  do {
+    let i = randomNumber(0,(Resturent.all.length-1));
+    if ( plan.budget === Resturent.all[i].resturentBudget && plan.planDays[0].dayLocation === Resturent.all[i].location && lastResturant !== Resturent.all[i]) {
+      plan.planDays[0].planResturent.push( Resturent.all[i] );
+      lastResturant = Resturent.all[i];
 
     }
 
-
-  }
-
+    console.log(!(plan.planDays[0].planResturent.length === 2 ));
+  }while(!(plan.planDays[0].planResturent.length === 2 ));
 }
+
 
 function pickActivities(){
   let length;
-  let lastCat;
-  for ( let i = 0 ; i < Activities.all.length ; i++ ){
-    if ( plan.planDays[0].planActivities.length < 3
-      && plan.budget === Activities.all[i].activityBudget
-      && plan.planDays[0].dayLocation === Activities.all[i].location ) {
-      // plan.planDays.length < 3 ---> used to make sure to only add 3 activities
+  let lastCat = '';
+  let listLastCat = [];
 
+  do{
 
-      //mohammad
+    let i = randomNumber(0,(Activities.all.length));
+
+    if ( plan.planDays[0].planActivities.length < 3 && plan.budget === Activities.all[i].activityBudget && plan.planDays[0].dayLocation === Activities.all[i].location ) {
+
       for (let j =0 ; j < plan.catogeries.length ;j++){
 
-
-        if ((Activities.all[i].catogery === plan.catogeries[j]) && (Activities.all[i].catogery !== lastCat)){
+        if ((Activities.all[i].catogery === plan.catogeries[j]) && !(listLastCat.includes(Activities.all[i].catogery))){
           plan.planDays[0].planActivities.push( Activities.all[i] );
           lastCat= Activities.all[i].catogery;
-          console.log(lastCat);
-          console.log((Activities.all[i].catogery !== lastCat));
+          listLastCat.push(lastCat);
 
-          length = plan.planDays[0].planActivities.length;
 
           for ( let k = length-1 ; k < length ; k++ ){
             activitiesTimeNeeded.push(plan.planDays[0].planActivities[k].timeNeeded);
@@ -71,7 +73,7 @@ function pickActivities(){
 
 
     console.log( plan );
-  }
+  }while(!(plan.planDays[0].planActivities.length === plan.catogeries.length ));
 }
 
 
