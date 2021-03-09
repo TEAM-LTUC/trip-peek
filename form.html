@@ -5,39 +5,80 @@
 </head>
 
 <body>
-<form id="tripForm">
-  <select  id="time">
-    <option value="3">3 days</option>
-    <option value="6">6 days</option>
-</select>
-<select  id="budget">
-  <option value="L">3000 (low) </option>
-  <option value="M">5000 (medium)</option>
-  <option value="G">7000 (high)</option>
-  <br>
-</select>
-<br>
+  <header>
+    <img src="https://placehold.it/70x70/000000/FFFFFF" />
+    <section>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="http://">get your plan</a></li>
+        <li><a href="http://"> about</a></li>
+        <li><a href="http://"> contact us</a></li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <h1>provide us with the information.<br>let us do the work for you</h1>
+    <h3>fill this form with your trip information</h3>
+    <div class="main">
+      <form id="tripForm">
+        <label>
+          <p class="p1">How long will your trip take ?
+          <p>
+            <select id="time">
+              <option value="3">3 days</option>
+              <option value="6">6 days</option>
+            </select>
+        </label>
+        <label>
+          <p class="p1">what's your average budget ?
+          <p>
+            <select id="budget">
+              <option value="L">3000 (low) </option>
+              <option value="M">5000 (medium)</option>
+              <option value="G">7000 (high)</option>
+              <br>
+            </select>
+        </label>
+        <br>
 
-<input type="checkbox" id="nature"  value="nature">
-<label for="nature"> Nature and Adventure</label><br>
-  <input type="checkbox" id="historical"  value="historical">
-  <label for="historical"> Historical cites </label><br>
-  <input type="checkbox" id="urban"  value="urban">
-  <label for="urban"> Urban activities </label><br><br>
-  <input type="checkbox" id="handCraft"  value="handCraft">
-  <label for="handCraft">Hand Crafts </label><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<a href="./tree.html">click me </a>
-
-<div id ="renderDiv" style="background-color:palevioletred; padding: 40px;">
+        <!-- <label id='selector'> -->
+        <p class="p1">what kind of activities do you want to do in your trip?</p>
+        <div id="radioButton">
+          <input type="checkbox" class="n2" id="nature" value="nature">
+          <label class="n1" for="nature"> Nature and Adventure</label><br>
 
 
-</div>
-<script src="js/app.js"></script>
-<script src="js/plan.js"></script> <!--you can remove this script/ local storage troubleshooting --> 
-<script src="js/form.js"></script>
-</body>
+          <input type="checkbox" class="n2" id="historical" value="historical">
+          <label class="n1" for="historical"> Historical cites </label><br>
+          <input type="checkbox" class="n2" id="urban" value="urban">
+          <label class="n1" for="urban"> Urban activities </label><br>
+          <input type="checkbox" class="n2" id="handCraft" value="handCraft">
+          <label class="n1" for="handCraft">Hand Crafts </label><br><br>
+          <input type="submit" value="Submit">
+        </div>
+        <!-- </label> -->
+      </form>
+    </div>
 
-</html>
+    <script src="js/app.js"></script>
+    <script src="js/plan.js"></script>
+    <!--you can remove this script/ local storage troubleshooting -->
+    <script src="js/form.js"></script>
+    <!-- <a href="./plan.html">click me </a> -->
+
+    <!-- <div id="renderDiv" style="background-color:palevioletred; padding: 40px;"> -->
+
+    </div>
+    <img src="https://via.placeholder.com/300/09f/fff.png" alt="">
+  </main>
+  <footer>
+    <ul>
+      <li> <img src="assets/img/fb-icon.png" /></li>
+      <li><img src="assets/img/insta-icon.png" /></li>
+      <li><img src="assets/img/twit-icon.png" /></li>
+    </ul>
+    <img src="https://placehold.it/70x70/000000/FFFFFF" />
+    <b>Copyright 2021&copy;</b>
+  </footer>
+  </body>
+  </html>>
