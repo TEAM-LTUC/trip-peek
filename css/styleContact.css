@@ -1,98 +1,176 @@
 *{
     box-sizing: border-box;
 }
-
-
-.container {
-    display: grid;
-    grid-template-rows: 100px minmax(calc(100vh - 170px) , 1fr) 50px;
-    gap: 10px;
-    grid-column: 1fr;
-}
-
-body {
+body{
     width: 100%;
     margin: auto;
     height: max-content;
     display: grid;
-    
-}
-
-section header {
+  }
+  header {
     display: grid;
-    grid-template-columns: 100px 1fr;
     align-items: center;
     grid-row: 1 /2;
     grid-column: 1 / -1;
-}
-
-section header img {
-    float: left;
-    padding: 30px 30px;
-}
-section header section ul {
-    float: right ;
-    margin-right: 10%;
-}
-
-section header section ul li {
+  }
+  header section{
+    padding: 10px;
+    margin-top: 100px;
+  }
+  header img {
+    height: 150px;
+    width: 150px;
+    margin: 0px 0px 0px 40px;
+  }
+  header section ul {
+    FONT-WEIGHT: 700;
+    text-align: center;
+    margin-top: -190px;
+  }
+  header section ul li {
     display: inline;
-    padding: 30px 3px;  
+    padding: 20px;  
+    margin-top: 100px;
     text-transform: uppercase;
-}
-
-section header section ul li a{
-    color: rgb(0, 0, 0);
+  }
+  header section ul li a{
+    color:black;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    text-shadow: 3px 2px 3px #6e6e6e;
 }
-
-
-main {
-    line-height: 1.5;
-    /* text-align: center; */
+.mainItem {
+  margin-top: 200px;
 }
-
-
-h2 {
-    text-align: center;
-    /* width: 300px; */
-    text-transform: initial;
-    /* width: 40px; */
+.mainItem h1{
+  text-align: center;
+  color:#fff ;
+  font-size: 100px;
+  text-shadow:  0px 1px 0px #222020;
+  margin-bottom: 20px;
+  margin-top:  -700px;
+  z-index: -1;
 }
-
-#about {
-    text-align: center;
-
+.mainpar{
+  padding: 20px 330px;
+  margin-bottom: 160px;
 }
-
-#groupvision {
-    /* width: 50%; */
-    text-align: center;
-    align-items: center;
+.mainpar h3{
+  text-align: center;
+  color:black ;
+  font-size: 25px;
 }
-
-
-main section div {
-    float: left;
-    width: 33.33%;
-    display: block;
-
+.mainpar p{
+text-align: center;
+font-size: 18px;
+color: #fff7f7;
+font-weight: normal;
+font-style: italic;
+padding: 0px 150px;
 }
-
-main section div img {
-    margin: 30px auto;
-    display: block;
+  main {
+    grid-row: 1 /3;
+    grid-column: 1 / -1;
+  }
+  main .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fshewandersabroad.com%2Fwp-content%2Fuploads%2F2021%2F02%2FWadi-Rum-Jordan-2a.jpg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  filter: brightness(45%);
+  }
+.about {
+    background-color: rgba(255, 229, 189, 0.829);
+    margin-top: 350px;
+    padding-left: 50px;
+    margin-right: 130px;
+    box-shadow: 9px 2px 26px -9px rgba(0,0,0,0.58);
 }
-
-main section div h4 {
-    text-align: center;
-    margin: 30px auto;
-    display: block;
+.secfounder {
+  margin: 150px 0px;
+  height: 400px;
+  margin-top: 500px;
+  padding-top: 30px;
 }
-
-main section div p {
-    text-align: center;
-    margin: 30px auto;
-    display: block;
+.vision {
+    width: 30%;
 }
-
+.vision h1 {
+    font-size: 40px;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #383435;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 5px #999;
+  margin-top: 20px;
+}
+button:hover {background-color: #4f5455a6}
+button:active {
+  background-color: #383435;
+  box-shadow: 1px 5px #4f5455a6;
+  transform: translateY(4px);
+}
+.imgFounders {
+    float: right;
+    margin-top: -370px;
+    margin-right: 0px;
+}
+.imgFounders img {
+    width: 370px;
+    margin-right: 30px;
+    height: 500px;
+}
+.imgFounders img:hover {
+  transform: scale(1.11); 
+  transition: transform .8s;
+}
+.about2 {
+    background-color: rgba(255, 229, 189, 0.829);
+    margin-top: 200px;
+    padding-right: 50px;
+    margin-left: 200px;
+    box-shadow: 10px 11px 9px -11px rgba(0,0,0,0.7);
+    height: 400px; 
+}  
+.about2 img {
+    width: 370px;
+    margin-right: 30px;
+    float: right;
+    margin-top: -45px;
+    height: 500px;
+}
+.about2 img:hover {
+  transform: scale(1.11); 
+  transition: transform .8s;
+}
+footer{
+        text-align: center;
+        display: block;
+        color: #fff;
+        margin-top: 200px;
+        background-color: #6e6e6e;
+    }
+.footericon {
+        float: left;
+        list-style: none;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    footer b{
+        margin-left: -140px
+    }
