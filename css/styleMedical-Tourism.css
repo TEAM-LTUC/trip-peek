@@ -102,7 +102,7 @@ padding-top: 5px;
 article h3 {
   font-size: 35px;
 }
-.button {
+.button1 {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -115,10 +115,59 @@ article h3 {
   border: none;
   border-radius: 15px;
   box-shadow: 1px 5px #999;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-left: 400px;
 }
-.button:hover {background-color: #bd1d45}
-.button:active {
+
+.button1:hover {background-color: #bd1d45}
+.button1:active {
+  background-color: #bd1d45;
+  box-shadow: 1px 5px #666;
+  transform: translateY(4px);
+}
+.button2 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #bd1d45;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 5px #999;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.button2:hover {background-color: #bd1d45}
+.button2:active {
+  background-color: #bd1d45;
+  box-shadow: 1px 5px #666;
+  transform: translateY(4px);
+}
+
+.button3 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #bd1d45;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 5px #999;
+  margin-top: 35px;
+  margin-left: 400px;
+}
+
+.button3:hover {background-color: #bd1d45}
+.button3:active {
   background-color: #bd1d45;
   box-shadow: 1px 5px #666;
   transform: translateY(4px);
@@ -156,4 +205,7 @@ article h3 {
 }
 footer b{
   margin-left: -140px
+}
+.fonts{
+  font-size: 22px;
 }
